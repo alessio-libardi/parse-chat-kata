@@ -1,10 +1,10 @@
 {
   "name": "parse-chat-kata",
   "version": "1.0.0",
-  "description": "Parse chat kara for Wonderflow evaluation",
+  "description": "Parse chat kata for Wonderflow evaluation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alessio-libardi/parse-chat-kata/issues"
   },
-  "homepage": "https://github.com/alessio-libardi/parse-chat-kata#readme"
+  "homepage": "https://github.com/alessio-libardi/parse-chat-kata#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
