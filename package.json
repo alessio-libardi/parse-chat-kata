@@ -1,0 +1,19 @@
+{
+  "name": "parse-chat-kata",
+  "version": "1.0.0",
+  "description": "Parse chat kara for Wonderflow evaluation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alessio-libardi/parse-chat-kata.git"
+  },
+  "author": "Alessio Libardi <alessio.libardi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alessio-libardi/parse-chat-kata/issues"
+  },
+  "homepage": "https://github.com/alessio-libardi/parse-chat-kata#readme"
+}
