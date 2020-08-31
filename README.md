@@ -1,6 +1,7 @@
 # Split the chat phrases
 
 This is a working solution of the [parse-chat-kata](https://github.com/wonderflow-bv/parse-chat-kata) kata by [wonderflow](https://www.wonderflow.co/).
+
 The language adopted is Node and the test library is Jest.
 
 ## Run
