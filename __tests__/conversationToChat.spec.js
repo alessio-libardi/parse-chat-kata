@@ -1,6 +1,6 @@
 const conversationToChat = require("../src/conversationToChat");
 
-describe("Split chat phrases function", () => {
+describe("Conversation to chat function", () => {
     test("it should accept a single sentence", () => {
         const input = '14:24:32 Customer : Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         const output = [{

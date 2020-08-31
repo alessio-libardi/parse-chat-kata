@@ -1,12 +1,13 @@
+const sentencesToActors = require("./sentencesToActors")
 const sentenceToMessage = require("./sentenceToMessage")
+const sentenceToName = require("./sentenceToName")
 
 function conversationToChat(conversation) {
-    let chat = []
-
-    const regexp = new RegExp(/^(?<sentence>.*\n?)/, 'gm')
+    const regexp = new RegExp(/^((?<date>^\d{2}:\d{2}:\d{2}).*\n?)\k<date>?/, 'gm')
     const match = conversation.match(regexp)
 
-    chat = match.map(sentence => sentenceToMessage(sentence))
+    const actors = sentencesToActors(match)
+    const chat = match.map(sentence => sentenceToMessage(sentence, actors[sentenceToName(sentence)]))
 
     return chat;
 }
