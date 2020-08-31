@@ -1,14 +1,12 @@
-function sentenceToMessage(sentence) {
-    let message = {}
-
-    const regexp = new RegExp(/(?<date>^\d{2}:\d{2}:\d{2}) (?<type>.+) : (?<sentence>.+\n?)/)
+function sentenceToMessage(sentence, actor) {
+    const regexp = new RegExp(/(?<date>^\d{2}:\d{2}:\d{2}) (?<name>.+) : (?<sentence>.+\n?)/)
     const match = regexp.exec(sentence)
 
-    message = {
+    const message = {
         date: match.groups.date,
-        mention: `${match.groups.date} ${match.groups.type} : `,
+        mention: `${match.groups.date} ${match.groups.name} : `,
         sentence: match.groups.sentence,
-        type: match.groups.type.toLowerCase()
+        type: actor
     }
 
     return message;
